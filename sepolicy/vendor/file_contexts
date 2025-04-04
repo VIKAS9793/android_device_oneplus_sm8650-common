@@ -1,0 +1,20 @@
+# Display
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service    u:object_r:hal_display_oneplus_exec:s0
+
+# Param
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.param@1\.0-service      u:object_r:hal_param_oneplus_exec:s0
+
+# Fingerprint
+/dev/goodix_fp                                                                    u:object_r:fingerprint_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oneplus    u:object_r:hal_fingerprint_default_exec:s0
+
+# Sensors
+/dev/sensors                                                                      u:object_r:sensors_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.1-service\.oneplus   u:object_r:hal_sensors_default_exec:s0
+
+# Touch
+/sys/devices/platform/soc/a94000\.i2c/i2c-4/4-004b/input/input[0-9]+/double_tap  u:object_r:sysfs_touchpanel:s0
+/sys/devices/platform/soc/a94000\.i2c/i2c-4/4-004b/input/input[0-9]+/single_tap  u:object_r:sysfs_touchpanel:s0
+
+# USB
+/sys/devices/platform/soc/a600000\.ssusb/mode                                     u:object_r:sysfs_usb_controller:s0
