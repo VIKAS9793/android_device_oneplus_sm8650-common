@@ -1,0 +1,41 @@
+# Copyright (C) 2024 The LineageOS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Display HAL
+type hal_display_oneplus, domain;
+type hal_display_oneplus_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_display_oneplus)
+
+# Param HAL
+type hal_param_oneplus, domain;
+type hal_param_oneplus_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_param_oneplus)
+
+# Allow display HAL to read/write display properties
+allow hal_display_oneplus vendor_display_prop:property_service { set };
+allow hal_display_oneplus vendor_display_prop:property_type { get };
+
+# Allow param HAL to read/write param properties
+allow hal_param_oneplus vendor_param_prop:property_service { set };
+allow hal_param_oneplus vendor_param_prop:property_type { get };
+
+# Allow system server to access HAL services
+allow system_server hal_display_oneplus:service_manager find;
+allow system_server hal_param_oneplus:service_manager find;
+
+# Allow HALs to communicate with each other
+allow hal_display_oneplus hal_param_oneplus:service_manager find;
+allow hal_param_oneplus hal_display_oneplus:service_manager find; 
