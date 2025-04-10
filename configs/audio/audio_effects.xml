@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2018, The Linux Foundation. All rights reserved. -->
+<audio_effects>
+    <library name="audio.processing" uuid="c598d500-ae2d-11e6-bc64-92361f002671">
+        <effect name="audio.dynamics.compressor" uuid="c598d501-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.limiter" uuid="c598d502-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.expander" uuid="c598d503-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.gate" uuid="c598d504-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.equalizer" uuid="c598d505-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.bassboost" uuid="c598d506-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.presetreverb" uuid="c598d507-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.virtualizer" uuid="c598d508-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.loudnessenhancer" uuid="c598d509-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.environmentalreverb" uuid="c598d50a-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.hapticgenerator" uuid="c598d50b-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.hapticplayer" uuid="c598d50c-ae2d-11e6-bc64-92361f002671"/>
+    </library>
+    <library name="audio.primary" uuid="c598d50d-ae2d-11e6-bc64-92361f002671">
+        <effect name="audio.haptic.player" uuid="c598d50e-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.haptic.generator" uuid="c598d50f-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.compressor" uuid="c598d510-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.limiter" uuid="c598d511-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.expander" uuid="c598d512-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.gate" uuid="c598d513-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.equalizer" uuid="c598d514-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.bassboost" uuid="c598d515-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.presetreverb" uuid="c598d516-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.virtualizer" uuid="c598d517-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.loudnessenhancer" uuid="c598d518-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.environmentalreverb" uuid="c598d519-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.hapticgenerator" uuid="c598d51a-ae2d-11e6-bc64-92361f002671"/>
+        <effect name="audio.dynamics.hapticplayer" uuid="c598d51b-ae2d-11e6-bc64-92361f002671"/>
+    </library>
+</audio_effects>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<platform>
+    <!-- Platform information -->
+    <platform_info>
+        <platform_name>sm8650</platform_name>
+        <platform_version>1.0</platform_version>
+    </platform_info>
+
+    <!-- Audio Device Configuration -->
+    <device_config>
+        <device name="primary">
+            <type>PCM</type>
+            <id>0</id>
+            <channels>2</channels>
+            <sampling_rate>48000</sampling_rate>
+            <bits_per_sample>16</bits_per_sample>
+        </device>
+    </device_config>
+
+    <!-- Audio Codec Configuration -->
+    <codec_config>
+        <codec name="primary">
+            <type>PCM</type>
+            <id>0</id>
+            <format>PCM_16_BIT</format>
+            <channels>2</channels>
+            <sampling_rate>48000</sampling_rate>
+        </codec>
+    </codec_config>
+</platform>

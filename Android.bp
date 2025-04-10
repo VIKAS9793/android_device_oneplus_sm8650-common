@@ -1,0 +1,17 @@
+cc_defaults {
+    name: "device_oneplus_sm8650_common",
+    target: {
+        android: {
+            arch: {
+                arm64: {
+                    srcs: ["*.cpp", "*.c"],
+                },
+            },
+        },
+    },
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+    vendor_available: true,
+}
